@@ -1,2 +1,2 @@
-# angular-svg-edit
+# angular-svg-editor
 on screen SVG color editor
