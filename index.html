@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="hcApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/angularjs-color-picker.min.css">
+    <style>
+    svg {
+        width: 250px;
+        background-color: #e0dede;
+        height:250px;
+    }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+    <script src="assets/js/tinycolor-min.js"></script>
+    <script src="assets/js/angularjs-color-picker.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/services.js"></script>
+    <script src="app/controller.js"></script>
+    <script src="app/directive.js"></script>
+</head>
+
+<body>
+    <section class="container">
+        <div class="svg">
+        <hc-directive data-color="{{baseColor}}" data-facemaskcolor="{{facemaskColor}}"></hc-directive>
+        <color-picker ng-model="baseColor"></color-picker>
+        <div>{{myColor}}</div>
+        <color-picker ng-model="facemaskColor"></color-picker>
+        </div>        
+    </section>
+</body>
+
+</html>
